@@ -1,0 +1,519 @@
+/*Estilos globales-*/
+
+body{               
+     /*background-color: rgb(216, 233, 168);*/
+    margin:  0;                     /*dejamos margenes a 0*/
+    padding: 0;                                  /*espcio en cero*/
+    font-size: 16px;                             /* especifica tamaño de letra */
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+    li:hover{                           /*Deja los li con opacidad*/
+        opacity: 70%;
+    }
+        li, .botonheader, .hamburguesa, .img-1, .imgbajo, .botonblanco, .go{
+            cursor: pointer;
+        }            
+            header{
+            display: flex;                              /*se ajusta para que se vea uno al lado del otro*/
+            width:100% ;                              /*VW= porcentaje (100%)ocupa el ancho de la pantalla vw -> viewport width*/
+            height:100px;                               /*vh= porcentaje (10%) ocupa el alto de la pantalla*/  
+            justify-content: space-around;              /*justifica el texto en lo ancho */
+            align-items: center;                       /*justifica el texto al alto*/             
+            }    
+.imgizq{                                    /*organizamos tamaño de img */
+    width: 120px;
+}
+    .nav1{
+        width: 35%;                         /*ancho se ajusta al %*/
+        font-size: 1.0rem;                  /*rem= x veces mas que, especifica tamaño de letra */
+        list-style-type: none;              /*retira los puntos del listado el estilo de lista*/
+        display: flex;                      /*deja horizontal el listado*/
+        margin: 0px 10px;                   /*margen adicional que se genera cuando el tamaño de pantalla disminuye*/
+    }
+        .nav1 li{
+            padding: 15px;      /*deja espcios entre palabras*/
+            
+        }
+        .nav1 a{
+            color: #242e52;                                ;
+            text-decoration: none;
+                        
+        }
+            .botonheader{                   /*se genera boton*/              
+                padding: 10px;              /*relleno al rededor del texto*/
+                background-color:rgb(78, 159, 61);/*color de relleno*/
+                border-radius: 50px;        /*genera esquinas redondas*/
+                border: none;               /*sin borde*/
+                color: #FFFFFF;           /*color de letra*/
+                width: 95px;                /*ajusta ancho*/
+                text-align: center;         /*ajuste de texto al centro*/
+            }
+
+
+
+/*--------------//-------------//MAIN//-------------//-----------------*/
+.portada{
+    height: 100hw;    
+}   .img-1_1{    
+        width: 100vw;
+        height: auto;     
+        margin: 0px 0px 0px;  
+    }
+    
+.secc1{
+    display: flex;                              /*se ajusta para que se vea uno al lado del otro*/
+    width: 100% ;                              /*VW= porcentaje (100%)ocupa el ancho de la pantalla vw -> viewport width*/
+    height: 100vh ;                              /*vh= porcentaje (100%) ocupa el alto de la pantalla*/  
+    justify-content: space-around;              /*justica el texto en lo ancho */
+    align-items: center;                        /*justica el texto al alto*/
+}
+.art1{       
+    margin: 50px;                           /*ajuste de margen*/
+}   
+h1{
+    text-align: center;
+    font-size: 3.2rem;                  /*aumenta tamaño de letra*/
+}
+.img-1{
+    padding: 10px;              /*relleno al rededor del texto*/
+    background-color: rgb(78, 159, 61);/*color de relleno*/
+    border-radius: 50px;        /*genera esquinas redondas*/
+    border: none;               /*sin borde*/
+    color: #FFFFFF;           /*color de letra*/
+    width: 95px;                /*ajusta ancho*/
+    text-align: center;
+    margin: 0 135px;  
+    display: flex;                     
+    
+}
+.art2{
+    
+    
+    margin: 0px 30px 0px 0px ;    /*ajuste de margen*/
+}   .grupoLaguna{
+    
+    background-color: green;
+}
+
+/*---------------/-----------------section2--------------/---------------------*/
+.secc2{
+    display: flex;                                  /*se ajusta para que se pueda moficar*/
+    width: 100vw ;                                  /*VW= porcentaje (100%)ocupa el ancho de la pantalla vw -> viewport width*/
+    height:100hx ;                                  /*vh= porcentaje (10%) ocupa el alto de la pantalla*/  
+    justify-content: space-around;                  /*justica el texto en lo ancho */
+    align-items:flex-start;                            /*justica el texto al alto*/
+    margin: 0px;
+}
+    .art3{
+        margin: 0px 30px 0px 50px ;                /*ajuste de margen*/
+        width: 50%;
+        margin: 10% 10px;   
+    }
+        h2{
+            font-size: 3.5rem;       /*aumenta tamaño de letra*/
+        }
+        .p2{
+            width: 440px;
+            height: 70px;                           
+        }
+
+
+.art4{
+    color: #B3B2B7;    /*cambio de color de letra*/     
+    margin: auto 0px;    
+    width: 50%;
+}
+.div1, .div2, .div3{
+    background-color:rgb(216, 233, 168);
+    color: black;
+    display: flex;
+    align-items: center;            /*justica el texto al alto*/
+}    .icono{
+    width: 80px;
+}
+.t1, .t2, .t3{                
+    text-align: left;
+    justify-content: space-around;;
+    margin: 0px 0px 0px 30px;
+}
+.lis1, .lis2, .lis3{
+    margin: 10px 50px 10px 95px;
+}
+
+
+/*---Galria imagenes efecto---*/
+.galeria{
+    display: flex;
+    background-color: #8b48Bf;
+    width: 100%;
+    height: 430px;        
+}
+    .galeria img{
+        width: 0px;        
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+    }
+        .galeria img:hover{
+            cursor: crosshair;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+/*-------------------------------secc3-----------------------------------------------*/
+
+.secc3{
+    display: flex;
+    flex-direction: column; 
+}
+    h4{
+        text-align: center; 
+        font-size: 3.5rem;  
+    }
+        .art_caras{
+            display: flex;
+            text-align: center;
+        }   
+            .perfiles{
+                margin: 10px;
+            }
+                .perfiles img{
+                    height: 100px ;
+                    border-radius: 50px;
+                }   
+                    .c1, .c2, .c3{
+                        color: rgba(185, 185, 193, 1);
+                    }
+
+    .botonbajo{
+        display: flex;
+        text-align: center;
+        height: 13rem ;        
+    }
+        .botonbajo button{
+            text-align: center;
+            margin: auto;
+        }   
+            .contactanos{
+                padding: 10px;              /*relleno al rededor del texto*/
+                background-color:rgb(30, 81, 40);/*color de relleno*/
+                border-radius: 50px;        /*genera esquinas redondas*/
+                border: none;               /*sin borde*/
+                color: #FFFFFF;           /*color de letra*/
+                width: 95px;                /*ajusta ancho*/
+                text-align: center;         /*ajuste de texto al centro*/       
+            }    
+/*-----------------------------------------------------------------------------------*/
+.secc4{
+    background-color:rgb(30, 81, 40);/*#8b48bf;*/
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    align-items: center;
+}
+    h6{
+        color: #ffffff;
+        font-size: 40px;                   /*aumenta tamaño de letra*/
+        margin: 0px 0px 0px 20px;
+        width: 100%;           
+    }
+        
+    .botonblanco1{            
+        display: flex;
+        margin: 0px 0px 0px 0px;
+        text-align: center;                
+    }
+        
+/*_______________________________________footer_________________________________________________*/   
+footer{
+color:rgba(140, 140, 148, 1);
+background-color: rgba(30, 30, 38, 1);
+width: 100%;
+}
+.home{
+    display: flex; 
+           
+    }
+    .pie1{
+        background-color: #8b48Bf;
+        margin: 5% 30px 5% 50px;            
+    }
+        .iconos{                
+            margin: 40px 30px 70px 20px;
+        }
+            .iconos img{
+                margin: 10px 4px 0px 0px;
+            }
+                .lista{
+                    display: flex;
+                    margin: 20px 0px 0px 0px;                        
+                }
+                    .home1, .home2{        
+                        flex-direction: column;
+                        margin: 20px 90px 70px 90px;                            
+                        list-style-type: none;
+                    }    
+                        .home1 li, .home2 li{
+                            margin: 10px;
+                        }
+                        .home1 a, .home2 a{
+                            color:  #ffffff;                                ;
+                            text-decoration: none;
+                        }    
+                        
+                            .home3{
+                                text-align: center;                                    
+                            }
+                                .buscador{
+                                    margin: 40px 80px 70px 80px;                                        
+                                }
+                                    .buscador input{
+                                        padding: 10px;              /*relleno al rededor del texto*/
+                                        background-color:#FFFFFF;/*color de relleno*/
+                                        border-radius: 50px;        /*genera esquinas redondas*/
+                                        border: none;               /*sin borde*/
+                                    }   
+                                        .buscador button{
+                                            padding: 10px;              /*relleno al rededor del texto*/
+                                            background-color: #8b48Bf;/*color de relleno*/
+                                            border-radius: 50px;        /*genera esquinas redondas*/
+                                            border: none;               /*sin borde*/
+                                            color: #FFFFFF;           /*color de letra*/
+                                            width: 95px;                /*ajusta ancho*/
+                                            height: 30px;
+                                            text-align: center;                
+                                        }       
+/*---------------------------------movil-------------------------------*/       
+
+ 
+
+/*________________________________--Estilo Movil Header--__________________*/
+                                                /*MEDIA QUERIES
+                                                max width -> hasta 480px maximo
+                                                min width -> desde 480px en adelante*/
+@media(max-width:480px) {                       /*si la pantalla esta por debajo de 480px*/    
+header{        
+    width: 100%;
+    height: 150px;  
+    margin: 0px;
+}    
+    .imgizq{
+        justify-content: right;
+    }
+        .nav1{
+            display: none;                      /*se culta .nav1 cuando es version movil*/
+        }
+            .botonheader{
+                display: none;                  /*se oculta .imgder cuando es version movil*/                 
+            }
+                .hamburguesa{
+                    justify-content: left;
+                }                     
+} 
+@media(min-width:480px){                        /*si la pantalla esta por encima de 480px*/
+    .botonheader{
+        visibility: visible;                    /*mostrar imagen en pantalla 1440px*/        
+    }
+        .hamburguesa{
+            display: none;                      /*oculta la img amburguesa en pantalla 1440*/
+        }
+}
+     
+/*______________________________Estilo movil secc1_________________________*/
+
+@media (max-width:480px) {                      /*si la pantalla esta por debajo de 480px*/
+main{
+    width: 100%; 
+    margin: 0px;
+}
+    .secc1{
+        width: 100%;
+        height:900px ; 
+        display: flex;                          /*se ajusta para que se pueda modificar*/
+        flex-direction: column-reverse;         /*cambiamos orden de horizontal a vertical invertiendo el orden*/
+    }
+        .art1 {
+            text-align: center;                 /*centramos el articulo*/                
+            width: 100vw ;                              /*VW= porcentaje (100%)ocupa el ancho de la pantalla vw -> viewport width*/
+            justify-items: center;
+        }
+           h1{
+            margin: 20px;
+            font-size: 51px;
+            width: 439px;
+            height: 200px;                
+            } 
+                .p1{                    
+                    font-size: 18px; 
+                    margin: 20px 40px;
+                }
+                    .img-1{
+                        margin: 0px ;              /*con margenes centramos la img*/
+                    }
+                        .art2{
+                            width: 100%;
+                            margin: 0px ;
+                        }
+                            .img-2{
+                                width: 480px ;
+                                height: 400px;
+                                margin: 0px x;
+                                text-align: center;
+                            }
+}
+/*______________________________Estilo movil secc2_________________________*/
+@media(max-width:480px) {
+.secc2{
+    margin: 0px ;
+    flex-direction: column; /*cambiamos orden de horizontal a vertical invertiendo el orden*/
+    width: 100% ;                  /*VW= porcentaje (100%)ocupa el ancho de la pantalla vw -> viewport width*/
+    height: 900px; 
+}
+    .art3{            
+        margin: 0px;
+        text-align: center;
+        width: 100% ;         
+    }
+        .art3 h2{
+            font-size: 35px;
+            margin: 30px 20px;
+        }
+            .p2{                  
+                text-align: center;
+                width: 100% ;                    
+                margin: 0px ;
+            }
+                .art4{
+                    margin: 0px 0px;
+                    width: 100%;
+                    height: 450px;
+                }
+                    .div1, .div2, .div3{
+                        background-color: #8b48bf4d;
+                        margin: 0px 20px;
+                        text-align: right;
+                    }
+                        .lis1, .lis2, .lis3{
+                            margin: 10px 20px 25px 20px;                                
+                        }
+
+}
+/*______________________________Estilo movil secc3_________________________*/
+                                            /*MEDIA QUERIES
+                                            max width -> hasta 700px maximo
+                                            min width -> desde 700px en adelante*/
+@media(max-width:480px) {
+.secc3{
+    margin: 0px 0px 0px 0px;
+    flex-direction: column; /*cambiamos orden de horizontal a vertical invertiendo el orden*/
+    align-items: center;
+    width: 100% ;            
+}
+    h4{
+        align-items: center;                
+        margin: 100px 0px;
+        font-size: 40px;                
+    }
+        h5{
+        font-size: 1.5rem;                
+        }
+            .izq1, .der3{
+                display: none;
+            }
+                .botonbajo{
+                    align-items: center;
+                }
+}
+/*movil secc4*/
+@media (max-width:480px) {
+.secc4{
+    width: 100%;
+    height: 320px;
+    background-color: #8b48Bf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+    h6{
+        margin: 0px;
+    }
+        .botonblanco{
+            background-color: #FFFFFF;
+            margin: 0px;
+        }
+}
+/*movil footer                                                     se que se puede poner uno solo pero lo uso como ayuda visual para giarme en caso de cambio*/ 
+ @media(max-width:480px){
+.home{
+    flex-direction: column-reverse;
+    text-align: center;
+    background-color: rgba(30, 30, 38, 1);
+    width: 100%;
+}
+    .pie1{
+        text-align: center;            
+        width: 100%;
+        margin: 0PX;
+        display: flex;
+        flex-direction: column-reverse;            
+    }
+        .footerlogo{
+            width: auto;
+            align-items: center;
+            margin: 0px 50px;            
+        }
+            .iconos{
+                width: 100%;  
+                margin: 0px;
+            }
+                .iconos img{
+                    padding: 30px;                        
+                }
+                    .lista{
+                        width: 100%;
+                    }
+                        .lista ul{                           
+                            text-align: left;
+                            width: 100%;
+                            margin: 0px 0px 0px 50px;
+                        }
+                            .home3{
+                               margin: 0px;
+                            }
+                                .buscador{
+                                    width: 100%;
+                                    margin: 50px 0px 0px;
+                                }
+                                    .buscador input{
+                                        width: 300px;                /*ajusta ancho*/
+                                        height: 44px;
+                                        margin: 0px;
+                                    }
+                                        .buscador button{
+                                            width: 60px;                /*ajusta ancho*/
+                                            height: 44px;
+                                        }
+                                            .nn{
+                                                text-align: center;
+                                                width: 100vw ;
+                                                height: 50px;
+                                                margin: 20px 0px;
+                                                font-size: 0.8rem;
+                                                visibility: visible;                        
+                                            }
+                                                .oculto{
+                                                    display: none;
+                                                }
+}
+@media(min-width:700px){
+.nn{
+display: none;
+}
+.oculto{
+    visibility: visible;
+}
+}
+
+
